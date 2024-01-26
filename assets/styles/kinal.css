@@ -86,8 +86,36 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.proyecto a:hover {
-    background-color: #3498db; /* Gris más oscuro al pasar el ratón */
+.proyecto {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.proyecto:hover {
+    transform: translateX(20px); /* Ajusta la cantidad de desplazamiento según sea necesario */
+}
+
+.proyecto-contenido {
+    padding: 20px; /* Ajusta según sea necesario */
+    z-index: 1;
+    position: relative;
+}
+
+.imagen-proyecto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta según sea necesario */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.proyecto:hover .imagen-proyecto {
+    transform: translateX(0);
 }
 
 .services {
