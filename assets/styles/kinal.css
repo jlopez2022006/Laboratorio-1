@@ -1,0 +1,140 @@
+.header {
+    background-color: #11124d;
+    height: 80px;
+}
+
+.logo {
+    margin-left: 450px;
+    margin-top: -45px;
+}
+
+
+.encabezado{
+    display: flex;
+    color: green;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: -30px;
+}
+
+.logo2{
+    display: flex;
+    margin-left: 1300px;
+    margin-top: -45px;
+}
+
+.encabezado a{
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+.fondo{
+    background-image: url(/assets/resources/img/fondo.png);
+    height: 545px;
+}
+
+.proyectos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyecto {
+    flex: 1;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.proyecto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d9dcdf;
+    opacity: 0.50;
+    z-index: -1;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.proyecto:hover::before {
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.proyecto h3,
+.proyecto p,
+.proyecto a {
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Gris oscuro para el botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.proyecto a:hover {
+    background-color: #3498db; /* Gris más oscuro al pasar el ratón */
+}
+
+.services {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(https://www.gimnasios.com/im/media/YTo0OntzOjI6ImlkIjtpOjEwOTk0O3M6MToidyI7aTozMDA7czoxOiJoIjtpOjMwMDtzOjE6InQiO3M6MTk6Im1hcC1jYXJvdXNlbC1zbGlkZXIiO30=);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+}
+
+.services-content {
+    text-align: center center;
+}
+
+.services-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #caac45;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services-content p {
+    font-size: 20px;
+    color: #C5C5C5;
+    margin-bottom: 50px;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+.services-group {
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.services-1 {
+    padding: 0 50px;
+}
+
+.services-1 h3 {
+    color: white;
+    font-size: 15px;
+}
