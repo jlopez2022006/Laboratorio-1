@@ -89,7 +89,7 @@ body {
 .header-content h1 {
     font-size: 75px;
     line-height: 80px;
-    color: #caac45;
+    color: gray;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
